@@ -1,0 +1,30 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: cds #项目名 springcloud注册时进行展示   项目路径使用servlet-path进行设置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ycs?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Hongkong
+    username: root
+    password: ycb@123456
+    dbcp2:
+      min-idle: 200 #最小连接数
+      max-wait-millis: 30000 #配置获取超时连接的等待时间
+      initial-size: 200 #初始化连接数
+      validation-query: SELECT 1
+      time-between-eviction-runs-millis: 50000 #配置多长时间进行一次检测,检测需要关闭的数据库连接
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.bfgy.cds.entity  # 注意：对应实体类的路径
+
+swagger:
+  show: true
+
+logging:
+  level:
+    com:
+      bfgy:
+        cds:
+          dao: debug
