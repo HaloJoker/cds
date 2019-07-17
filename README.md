@@ -4,22 +4,6 @@ springboot、mybatis、swagger 干净的项目架构
 
 sql脚本
 
-/*
- Navicat Premium Data Transfer
-
- Source Server         : test
- Source Server Type    : MySQL
- Source Server Version : 50711
- Source Host           : 39.106.27.238:3306
- Source Schema         : ycs
-
- Target Server Type    : MySQL
- Target Server Version : 50711
- File Encoding         : 65001
-
- Date: 15/07/2019 12:17:38
-*/
-
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
